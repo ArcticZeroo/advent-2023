@@ -2,7 +2,9 @@ pub trait Solution {
     fn day() -> i32;
     fn new(input: &str) -> Self;
     fn part1(&self) -> String;
-    fn part2(&self) -> String;
+    fn part2(&self) -> String {
+        String::new()
+    }
     fn run(&self) {
         println!("Day {}:", Self::day());
         println!("  Part 1: {}", self.part1());
